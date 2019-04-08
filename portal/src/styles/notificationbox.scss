@@ -1,0 +1,13 @@
+@import "Global";
+
+.notifications{
+    position: fixed;
+    width: 10vw;
+    height: auto;
+    padding: 30px;
+    margin-left: -11%;
+    margin-top:1vh;
+    background-color: black;
+    color: white;
+    transition: $transition-fast;
+}

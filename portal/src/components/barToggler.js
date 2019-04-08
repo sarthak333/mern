@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/toggler.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class barToggler extends Component {
     
@@ -12,9 +13,9 @@ render(){
         <div className="toggle-container">
         {
             (this.props.display)?
-            '<-'
+            <FontAwesomeIcon icon="angle-left" />
             :
-            '->'
+            <FontAwesomeIcon icon="angle-right" />
         }
         
         </div>

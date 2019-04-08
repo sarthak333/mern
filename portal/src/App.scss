@@ -35,5 +35,10 @@
 .main-body{
   .content{
     transition: 0.3s ease-in-out;
+    .toastNotify{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
   }
 }

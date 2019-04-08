@@ -11,13 +11,18 @@
     align-items: center;
     padding: 0 50px;
 
-    .icon-container {
+    .shift-right {
         position: relative;
+        width: inherit;
 
-        .icon {
+        .icon-container {
             float: right;
-            font-size: 1.5em;
-        }
 
+            .icon {
+
+                font-size: 1.5em;
+            }
+
+        }
     }
 }

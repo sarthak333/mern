@@ -9,10 +9,11 @@ import './App.scss';
 import HomePage from './containers/homepage.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFolder, fas, faHeadphones, faComments, faCode, faEllipsisH,  faRandom, faDotCircle  } from '@fortawesome/free-solid-svg-icons'
+import { faFolder, fas, faHeadphones, faComments, faCode, faEllipsisH,  faRandom, faDotCircle, faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ToastNotification from './components/ToastNotification.js'
 
-library.add(faFolder, fas, faHeadphones, faComments, faCode, faEllipsisH,  faRandom, faDotCircle)
+library.add(faFolder, fas, faHeadphones, faComments, faCode, faEllipsisH,  faRandom, faDotCircle, faAngleLeft, faAngleRight)
 class App extends Component {
   // initialize our state 
   state = {
@@ -24,7 +25,8 @@ class App extends Component {
     idToUpdate: null,
     objectToUpdate: null,
     sidebar: true,
-    currentPage: 'homepage'
+    currentPage: 'homepage',
+    toast: true
   };
 
   // when component mounts, first thing it does is fetch all existing data in our db
@@ -110,6 +112,9 @@ class App extends Component {
       });
     };
    */
+  handleToast =()=>{
+    alert("fnasdasjlflds")
+  }
   toggleSidebar = () => {
     this.setState({
       sidebar: (!this.state.sidebar)
@@ -137,11 +142,18 @@ class App extends Component {
         <Sidebar display={this.state.sidebar} />
         <BarToggler toggle={this.toggleSidebar} display={this.state.sidebar} />
         <div className="main-body">
-          <div className="content" style={{ marginLeft: (this.state.sidebar ? '22vw' : '5vw') }}>
+          <div className="content" style={{ marginLeft: (this.state.sidebar ? '22vw' : '5vw') , width: (this.state.sidebar ? '77vw' : '90vw') }}>
 
             {display}
 
-
+        {
+          (this.state.toast)?
+          <div className="toastNotify">
+           <ToastNotification  content="random" />
+          </div>
+          :
+          ''
+        }
 
 
 
