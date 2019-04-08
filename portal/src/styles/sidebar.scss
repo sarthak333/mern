@@ -1,6 +1,61 @@
-.Sidebar{
-    height:101vh;
-    width:15vw;
-    position: fixed;
-    background-color: #000;
+@import "Global";
+
+.Sidebar {
+  height: 101vh;
+  z-index: 2;
+  position: fixed;
+  background-color: $light-gray;
+  box-shadow: 0px 0px 8px $light-shadow;
+  transition:$transition-fast;
+  color: $black;
+  display: flex;
+  justify-content: center;
+
+  .sidebar-content {
+    padding: 10vh 0;
+
+    .option-list {
+      margin: 10vh 0;
+      
+      .option {
+        font-size: $font-md;
+        font-weight: $font-light;
+        margin: 2vh 0;
+        text-decoration: none;
+        transition: $transition-fast;
+        padding:0.8vh 1vw; 
+        border-radius: $border-smooth;
+        width:30%;
+        &:hover {
+          width: 100%; 
+          background-color: $black;
+          font-weight: $font-mid;
+          color: $white;
+          text-shadow: 0px 0px 20px $white;
+        }
+      }
+    }
+
+    .user-image {
+      border: 2px solid $black;
+      margin: 0 auto;
+      height: 7vw;
+      width: 7vw;
+      background-color: $white;
+      border-radius: $circular;
+      transition: $transition-fast;
+      &:hover{
+        border: 1px dashed gray;
+        box-shadow: 0px 0px 5px aqua;
+        transform: scale(1.1)
+      }
+    }
+  }
+
+  h1 {
+    font-family: $font-style-1;
+    font-size: $font-md;
+    font-weight: $font-light;
+    transition: $transition-fastest;
+  }
 }

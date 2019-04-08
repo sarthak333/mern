@@ -1,7 +1,23 @@
-.Topbar{
-    margin-left:15vw;
-    width:85vw;
-    height:6vh;
-    position:fixed;
-    background-color: #000;
+@import "Global";
+
+.Topbar {
+    z-index: 3;
+    height: 6vh;
+    position: fixed;
+    background-color: $light-gray;
+    box-shadow: 5px 0px 8px #dedede;
+    transition: $transition-fast;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+
+    .icon-container {
+        position: relative;
+
+        .icon {
+            float: right;
+            font-size: 1.5em;
+        }
+
+    }
 }

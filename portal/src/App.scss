@@ -33,6 +33,7 @@
 }
 
 .main-body{
-  padding-top: 6vh;
-  margin-left: 26vw;
+  .content{
+    transition: 0.3s ease-in-out;
+  }
 }

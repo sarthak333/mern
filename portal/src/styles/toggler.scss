@@ -1,0 +1,27 @@
+@import "Global";
+
+.toggler{
+    position:relative;
+    top:92vh;
+    width:6vh;
+    z-index: 4;
+    transition: $transition-medium;
+    .toggle-container{
+    background-color: $pseudo-black;
+    border-radius: $circular;
+    height:6vh;
+    color:$white;
+    width:6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: $transition-fastest;
+    &:hover{
+        color: $black;
+        background-color: $white;
+        box-shadow: 0px 0px 5px aqua;
+        transform: scale(1.1)
+    }
+}
+}

@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sarthak333/mern#readme",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "i": "^0.3.6",
+    "npm": "^6.9.0"
   }
 }

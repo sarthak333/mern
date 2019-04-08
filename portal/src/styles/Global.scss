@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+//fonts
+$font-style-1: 'Comfortaa';
+$font-style-2: 'Poiret One';
+$font-light: 100;
+$font-mid: 400;
+$font-heavy: bolder;
+$font-lg: 1.8em;
+$font-md: 1.4em;
+
+
+//transitions
+$transition-fastest: 0.1s ease-in-out;
+$transition-fast: 0.2s ease-in-out;
+$transition-medium: 0.3s ease-in-out;
+$transition-slow: 0.4s ease-in-out;
+
+
+//color
+$light-gray: #f7f7f7;
+$light-shadow: #bfbfbf;
+$black: #000;
+$white: #fff;
+$pseudo-black: #0a0a0a;
+
+
+//borders
+$border-smooth: 50px;
+$circular: 50%;

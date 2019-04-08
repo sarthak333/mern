@@ -1,0 +1,99 @@
+@import "Global";
+
+.homepage-container {
+  padding: 2vh 0;
+  font-family: $font-style-2;
+  font-size: $font-lg;
+
+  h1 {
+    font-weight: $font-light;
+  }
+
+  .task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .task-child {
+      height: 30vh;
+      width: 30vh;
+      margin: 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: $transition-fast;
+      color: gray;
+
+      p {
+        padding: 3px 1px;
+        transition: $transition-fast;
+      }
+
+      &:hover {
+
+        p {
+          padding: 3px 25px;
+          widt: fit-content;
+          color: white;
+          background-color: gray;
+          border-radius: $border-smooth;
+        }
+      }
+
+      .icon {
+        font-size: 10vh;
+
+
+      }
+
+      .folder {
+
+        color: #f9b453;
+
+        &:hover {
+          color: #d98208;
+        }
+
+      }
+
+      .music {
+
+        color: #9514ff;
+
+        &:hover {
+          color: #6500b8;
+        }
+
+      }
+
+      .conversation {
+        color: #5c5c5c;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .work {
+        color: #00bfc2;
+
+        &:hover {
+          color: #007375;
+        }
+      }
+
+      .random {
+        color: #9adb00;
+
+        &:hover {
+          color: #84bd00;
+        }
+      }
+
+      .options {
+        color: black;
+      }
+    }
+  }
+}
